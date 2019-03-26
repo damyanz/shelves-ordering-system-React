@@ -1,0 +1,135 @@
+@import "../../../App.scss";
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+
+.range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  opacity: 1;
+  background: #d3d3d3;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.range:hover {
+  opacity: 1;
+}
+
+#w::-webkit-slider-thumb {
+  background: #ec1d23;
+}
+
+#h::-webkit-slider-thumb {
+  background: #fffc19;
+}
+
+#d::-webkit-slider-thumb {
+  background: #0971b2;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #ec1d23;
+}
+
+.range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #ec1d23;
+}
+$color1: #f4f4f4;
+$color2: #ec1d23;
+
+.radio {
+  display: inline-block;
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    + .radio-label {
+      &:before {
+        content: "";
+        background: $color1;
+        border-radius: 100%;
+        border: 1px solid darken($color1, 25%);
+        display: inline-block;
+        width: 1.4em;
+        height: 1.4em;
+        position: relative;
+        top: -0.2em;
+        margin-right: 0.2em;
+        vertical-align: bottom;
+        cursor: pointer;
+        text-align: center;
+        transition: all 250ms ease;
+      }
+    }
+    &:checked {
+      + .radio-label {
+        &:before {
+          background-color: $color2;
+          box-shadow: inset 0 0 0 4px $color1;
+        }
+      }
+    }
+    &:focus {
+      + .radio-label {
+        &:before {
+          outline: none;
+          border-color: $color2;
+        }
+      }
+    }
+    &:disabled {
+      + .radio-label {
+        &:before {
+          box-shadow: inset 0 0 0 4px $color1;
+          border-color: darken($color1, 25%);
+          background: darken($color1, 25%);
+        }
+      }
+    }
+    + .radio-label {
+      &:empty {
+        &:before {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.radioGroup {
+  margin-top: 15px;
+  display: flex;
+  float: 1px;
+  justify-content: space-between;
+}
+
+.amount {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-content: center;
+}
+.select {
+  height: 35px;
+  padding: 0 10px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid darken($color1, 25%);
+  font-size: 1.2em;
+
+  &:hover {
+    border-width: 2px;
+    border-color: $color2;
+  }
+  &:focus {
+    outline-color: $color2;
+  }
+}

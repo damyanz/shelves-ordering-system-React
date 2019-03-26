@@ -1,0 +1,66 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+.main {
+  padding-top: 25px;
+  .options {
+    min-height: 300px;
+    //background-color: #535353;
+  }
+}
+
+.buttonbox {
+  display: flex;
+  flex: 1;
+}
+.redButton {
+  display: flex;
+  flex: 1;
+  height: 50px;
+}
+
+.center {
+  text-align: center;
+}
+.green {
+  color: darkgreen;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+th:not(:first-child) {
+  text-align: center;
+}
+
+tr td:not(:first-child) {
+  text-align: center;
+}
+
+.sum {
+  border-top: 2px solid #dee2e6;
+  color: white;
+  font-weight: bold;
+}
+.sum:first-child {
+  background-color: #444444;
+}
+
+.price {
+  min-width: 150px;
+  background-color: #ec1d23;
+  word-wrap: break-word;
+}
+.optMsgBox{
+  margin-bottom: 10px;
+  display: flex;
+  flex:1;
+  max-height: 350px;
+}
+.optMsg{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+
+}

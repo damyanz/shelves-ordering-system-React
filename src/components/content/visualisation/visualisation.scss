@@ -1,0 +1,44 @@
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+
+.ramka {
+  min-width: 300px;
+  min-height: 300px;
+  background-color: #aeaeae;
+}
+
+.render canvas {
+  border: 2px solid #aeaeae;
+}
+
+.visualization {
+  position: relative;
+}
+
+.buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 5px;
+  line-height: 1;
+  display: flex;
+  flex: 1;
+  transition: background-color 0.5s;
+  margin-bottom: 5px;
+}
+.button:hover {
+  background-color: #aeaeae;
+}
+
+canvas {
+  display: block;
+}
+
+.material-icons {
+  font-size: 2rem;
+}

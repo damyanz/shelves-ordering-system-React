@@ -1,0 +1,23 @@
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+
+.details {
+  background-color: #dee2e6;
+  padding: 15px;
+  height: 100%;
+}
+
+.heading {
+  text-align: right;
+}
+@include media-breakpoint-down(sm) {
+  .orderDetails {
+    margin-top: 20px;
+  }
+}
+.table-shelves {
+  background-color: #444444 !important;
+
+  td {
+    border-color: #dee2e6 !important;
+  }
+}

@@ -1,0 +1,141 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+.sampleuser {
+  margin-top: 15px;
+  color: #ffffff;
+  li {
+    margin-top: 10px;
+  }
+}
+.form {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  min-height: 70vh;
+  //max-width: 300px !important;
+  flex-direction: row;
+
+  .formBox {
+    display: flex;
+    flex: 1;
+    padding: 15px;
+    background-color: #444444;
+    flex-direction: column;
+    .formSwitch {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      align-items: flex-end;
+    }
+    .formElement {
+      display: flex;
+      flex: 1;
+      form {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        h4 {
+          margin-bottom: 0;
+          margin-top: 15px;
+          color: #ffffff;
+        }
+        .formRow {
+          display: flex;
+          flex: 1;
+          flex-direction: row;
+          margin: 10px 0 5px 0;
+          align-items: space-between;
+          .inline:first-of-type {
+            margin-right: 5px;
+          }
+          .inline:last-of-type {
+            margin-left: 5px;
+          }
+          .formInput {
+            background-color: #ffffff;
+            display: flex;
+            flex: 1;
+            border: none;
+            height: 50px;
+            i {
+              margin: 0 5px;
+              align-self: center;
+            }
+            &:focus-within {
+              //width: calc(100% - 2px);
+              outline: 2px solid #ec1d23;
+            }
+            input {
+              width: 0;
+              display: flex;
+              flex: 1;
+              padding: 10px;
+              border: 0;
+              font-size: 1.1em;
+              background: none;
+
+              &:focus {
+                outline: none;
+              }
+            }
+            .checkBox {
+              vertical-align: bottom;
+            }
+          }
+        }
+        .oswiadczenie {
+          color: #ffffff;
+        }
+      }
+    }
+
+    .underInputs {
+      margin-top: 10px;
+      display: flex;
+      flex: 1;
+      small {
+        display: flex;
+        flex: 1;
+        align-self: center;
+        color: #cccccc;
+      }
+    }
+    .red {
+      color: red;
+    }
+  }
+}
+
+.redButton {
+  color: white;
+  font-size: 1.1em;
+  display: flex;
+  flex: 1;
+  text-transform: uppercase;
+  background-color: #ec1d23;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.switchButton:first-of-type {
+  margin-right: 5px;
+}
+.switchButton:last-of-type {
+  margin-left: 5px;
+}
+
+.grayButton {
+  @extend .redButton;
+  background-color: #666666;
+}
+@include media-breakpoint-down(sm) {
+  .formBox {
+    max-width: 100%;
+    .formElement {
+      max-width: 100%;
+    }
+  }
+}

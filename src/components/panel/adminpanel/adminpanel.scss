@@ -1,0 +1,39 @@
+.fit {
+  width: 1% !important;
+  white-space: nowrap !important;
+  min-width: 80px !important;
+}
+
+.sum {
+  border-top: 2px solid #dee2e6;
+  color: white;
+  font-weight: bold;
+}
+.sum:first-child {
+  background-color: #444444;
+}
+
+.price {
+  background-color: #ec1d23;
+}
+
+.formSwitch {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price-input {
+  max-width: 75px;
+}
+.alert {
+  margin-top: 15px;
+}
+
+.inline {
+  display: inline;
+}
+
+.link--flex {
+  display: flex;
+  flex: 1;
+}

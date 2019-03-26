@@ -1,0 +1,76 @@
+{
+  "wizualizacja": {
+    "czesci": {
+      "nogi": {
+        "jednostka": "szt",
+        "nazwa": "Nogi stołowe",
+        "netto": 7.26
+      },
+      "profilA": {
+        "jednostka": "mb",
+        "nazwa": "Profil A",
+        "netto": 20.58
+      },
+      "profilB": {
+        "jednostka": "mb",
+        "nazwa": "Profil B",
+        "netto": 22.21
+      },
+      "zlaczka3": {
+        "jednostka": "szt",
+        "nazwa": "Złączka 3-kierunkowa",
+        "netto": 4.02
+      },
+      "zlaczka4": {
+        "jednostka": "szt",
+        "nazwa": "Złączka 4-kierunkowa",
+        "netto": 5.2
+      }
+    },
+    "materialy": [
+      {
+        "typ": "puste"
+      },
+      {
+        "rodzaje": [
+          {
+            "cena": 19,
+            "nazwa": "buk",
+            "tekstura": "beech.jpg"
+          },
+          {
+            "cena": 32,
+            "nazwa": "dąb",
+            "tekstura": "oak.jpg"
+          },
+          {
+            "cena": 22,
+            "nazwa": "jesion",
+            "tekstura": "ash.jpg"
+          }
+        ],
+        "typ": "drewno"
+      },
+      {
+        "rodzaje": [
+          {
+            "cena": 60,
+            "nazwa": "Czarne",
+            "tekstura": "#000000"
+          },
+          {
+            "cena": 40,
+            "nazwa": "Mleczne",
+            "tekstura": "#ffffff"
+          },
+          {
+            "cena": 55,
+            "nazwa": "Niebieskie",
+            "tekstura": "#ADD8E6"
+          }
+        ],
+        "typ": "szkło"
+      }
+    ]
+  }
+}

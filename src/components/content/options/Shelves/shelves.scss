@@ -1,0 +1,31 @@
+$color1: #f4f4f4;
+$color2: #ec1d23;
+
+.shelf {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+h5 {
+  width: 25px;
+}
+.select-mat {
+  margin-left: 15px;
+  height: 35px;
+  display: flex;
+  flex: 2;
+  padding: 0 10px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid darken($color1, 25%);
+  font-size: 1.2em;
+
+  &:hover {
+    border-width: 2px;
+    border-color: $color2;
+  }
+  &:focus {
+    outline-color: $color2;
+  }
+}

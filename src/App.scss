@@ -1,0 +1,16 @@
+@import "reset.scss";
+
+$font: "Montserrat", sans-serif;
+
+.estimation {
+  height: 100%;
+  font-family: $font;
+  background-color: #eeeeee;
+}
+
+html {
+  overflow-y: scroll;
+  background-color: #eeeeee;
+}
+body {
+}
